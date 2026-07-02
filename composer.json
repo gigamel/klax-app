@@ -1,0 +1,32 @@
+{
+  "name": "klax/app",
+  "description": "Klax Application",
+  "require": {
+    "php": "^8.3",
+    "klax/container": "^0.0.1",
+    "klax/event-dispatcher": "^0.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "repositories": {
+    "klax/container-contract": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-container-contract.git"
+    },
+    "klax/container": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-container.git"
+    },
+    "klax/event-dispatcher-contract": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-event-dispatcher-contract.git"
+    },
+    "klax/event-dispatcher": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-event-dispatcher.git"
+    }
+  }
+}
