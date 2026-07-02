@@ -6,4 +6,6 @@ use App\Kernel;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-(new Kernel())->run();
+Kernel::withDefaultContainer()
+    ->boot(__DIR__ . '/../di/kernel.php')
+    ->run();
