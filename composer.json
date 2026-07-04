@@ -4,7 +4,13 @@
   "require": {
     "php": "^8.3",
     "klax/container": "^0.0.1",
-    "klax/event-dispatcher": "^0.0.1"
+    "klax/event-dispatcher": "^0.0.1",
+    "klax/http-runner": "^0.0.1",
+    "klax/http-kernel-runner": "^0.0.2",
+    "klax/http-router": "^0.0.1",
+    "klax/streams": "^0.0.1",
+    "klax/http-message": "^0.0.1",
+    "klax/http-factory": "^0.0.1"
   },
   "autoload": {
     "psr-4": {
@@ -27,6 +33,54 @@
     "klax/event-dispatcher": {
       "type": "vcs",
       "url": "https://github.com/gigamel/klax-event-dispatcher.git"
+    },
+    "klax/http-runner": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-runner.git"
+    },
+    "klax/http-kernel-runner": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-kernel-runner.git"
+    },
+    "klax/http-router-contracts": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-router-contracts.git"
+    },
+    "klax/kernel-contract": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-kernel-contract.git"
+    },
+    "klax/http-kernel-contract": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-kernel-contract.git"
+    },
+    "klax/http-runner-contracts": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-runner-contracts.git"
+    },
+    "klax/abstract-http-runner": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-abstract-http-runner.git"
+    },
+    "klax/http-protocol": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-protocol.git"
+    },
+    "klax/http-router": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-router.git"
+    },
+    "klax/streams": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-streams.git"
+    },
+    "klax/http-message": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-message.git"
+    },
+    "klax/http-factory": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-http-factory.git"
     }
   }
 }
