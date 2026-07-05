@@ -10,7 +10,9 @@
     "klax/http-router": "^0.0.1",
     "klax/streams": "^0.0.1",
     "klax/http-message": "^0.0.1",
-    "klax/http-factory": "^0.0.1"
+    "klax/http-factory": "^0.0.1",
+    "klax/renderer-contract": "^0.0.1",
+    "klax/renderer": "^0.0.1"
   },
   "autoload": {
     "psr-4": {
@@ -81,6 +83,14 @@
     "klax/http-factory": {
       "type": "vcs",
       "url": "https://github.com/gigamel/klax-http-factory.git"
+    },
+    "klax/renderer-contract": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-renderer-contract.git"
+    },
+    "klax/renderer": {
+      "type": "vcs",
+      "url": "https://github.com/gigamel/klax-renderer.git"
     }
   }
 }
