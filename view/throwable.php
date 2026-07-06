@@ -6,6 +6,7 @@
 <p>Message: <?= $throwable->getMessage(); ?></p>
 <p>File: <?= $throwable->getFile(); ?>::<?= $throwable->getLine(); ?> line</p>
 
-<pre style="padding:15px;background:#000;color:aquamarine;">Stack trace:
-<?php var_dump(array_slice($throwable->getTrace(), 0, 3)); ?>
+<h2>Stack trace:</h2>
+<pre style="padding:15px;background:#000;color:aquamarine;">
+<?php var_dump(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 10)); ?>
 </pre>
