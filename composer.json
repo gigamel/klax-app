@@ -19,6 +19,9 @@
       "App\\": "src/"
     }
   },
+  "scripts": {
+    "server": "php -S localhost:8000 -t public"
+  },
   "repositories": {
     "klax/container-contract": {
       "type": "vcs",
