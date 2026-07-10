@@ -17,6 +17,7 @@ use Klax\Http\Runner\Middleware\ThrowableMiddleware;
 use Klax\Http\Skeleton\Runner\EmergencyThrowableHandler;
 use Klax\Http\Skeleton\Runner\SapiEmitter;
 use Psr\Container\ContainerInterface;
+use Psr\EventDispatcher\EventDispatcherInterface;
 
 return [
     HttpRunnerInterface::class => static function (ContainerInterface $container): HttpRunnerInterface {
@@ -24,6 +25,7 @@ return [
             $container->get(MainRequestHandlerInterface::class),
             $container->get(SapiEmitterInterface::class),
             $container->get(EmergencyThrowableHandlerInterface::class),
+            $container->get(EventDispatcherInterface::class),
         );
     },
     MainRequestHandlerInterface::class => static function (ContainerInterface $container): MainRequestHandlerInterface {
