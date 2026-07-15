@@ -24,10 +24,12 @@ readonly class ResponseRenderer implements ResponseRendererInterface
         int $statusCode = StatusCode::OK,
         array $headers = [],
     ): ResponseInterface {
-        return new Response(
-            $this->renderer->render($view, $vars),
-            $statusCode,
-            $headers,
-        );
+        $response = new Response($this->renderer->render($view, $vars), $statusCode);
+
+        foreach ($headers as $key => $value) {
+            $response = $response->withHeader($key, $value);
+        }
+
+        return $response;
     }
 }

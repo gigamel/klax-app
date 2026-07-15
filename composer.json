@@ -5,7 +5,7 @@
     "php": "^8.3",
     "klax/container": "^0.0.1",
     "klax/event-dispatcher": "^0.0.1",
-    "klax/http-runner": "^0.0.2",
+    "klax/http-runner": "^0.0.3",
     "klax/http-kernel-runner": "^0.0.2",
     "klax/http-router": "^0.0.1",
     "klax/streams": "^0.0.1",
